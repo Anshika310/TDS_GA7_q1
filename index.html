@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- RevealJS Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" />
+
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
+
+    <!-- Custom Styling (Optional) -->
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Slide 1: Title -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <p>Technical Consultant</p>
+          <p>Email: <a href="mailto:23f2004584@ds.study.iitm.ac.in">23f2004584@ds.study.iitm.ac.in</a></p>
+          <aside class="notes">
+            Introduce yourself and give a high-level summary of the presentation topics.
+          </aside>
+        </section>
+
+        <!-- Slide 2: Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+### Performance Highlights
+
+- Revenue Growth: **+15% YoY**
+- Net Income: **$2.3M**
+- EPS: **$0.45**
+
+---
+### Challenges
+
+- FX Volatility
+- Supply Chain Delays
+
+          </textarea>
+        </section>
+
+        <!-- Slide 3: Animated Fragments -->
+        <section>
+          <h2>Key Drivers of Revenue</h2>
+          <ul>
+            <li class="fragment">New customer acquisitions</li>
+            <li class="fragment">Increased product pricing</li>
+            <li class="fragment fade-up">Successful marketing campaigns</li>
+          </ul>
+          <aside class="notes">
+            Talk about how each driver contributed to the revenue growth.
+          </aside>
+        </section>
+
+        <!-- Slide 4: Code Sample with Syntax Highlighting -->
+        <section>
+          <h2>Data Analysis Script</h2>
+          <pre><code class="language-python" data-line-numbers="3-5|7">
+import pandas as pd
+import seaborn as sns
+
+# Load data
+df = pd.read_csv("earnings.csv")
+
+# Plot revenue
+sns.lineplot(data=df, x="quarter", y="revenue")
+          </code></pre>
+          <aside class="notes">
+            Explain the Python code used for revenue trend analysis.
+          </aside>
+        </section>
+
+        <!-- Slide 5: Financial Formula -->
+        <section>
+          <h2>Financial Formula</h2>
+          <p>Expected Return (CAPM):</p>
+          <p>
+            \[ E(R_i) = R_f + \beta_i (E(R_m) - R_f) \]
+          </p>
+          <aside class="notes">
+            Use this to explain how we calculated expected return on investment.
+          </aside>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- RevealJS Core Script -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+
+    <!-- Initialize Reveal -->
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        width: 1280,
+        height: 720,
+        transition: 'slide',
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>
